@@ -1,0 +1,42 @@
+<h2>bonsoir {{klass}}</h2>
+
+<input type="submit" (click)="color">
+{{color}}
+
+<div [style.backgroundColor]="color">
+
+my msg
+</div>
+<input type="text" [(ngModel)]="color" >
+<div *ngFor="let p of listProdcut">
+    <span *ngIf="p.quantity!=0">
+{{p.id}}
+{{p.title}}
+{{p.quantity}}
+{{p.price}}
+{{p.like}}
+
+</span>
+
+</div>
+---------------------------
+
+<div *ngFor="let p of listProdcut;let k=index">
+    
+{{p.id}}
+{{p.title}}
+{{p.quantity}}
+{{p.price}}
+{{p.like}}
+<input type="submit" value="like" (click)="IncreaseLike(k)" class="btn btn-success">
+<div  *ngIf="p.quantity==0">
+<input type="submit" value="buy" disabled>
+</div>
+<div  *ngIf="p.quantity!=0">
+    <input type="submit" value="buy" (click)="decreaseQantity(k)" >
+    </div>
+
+    <input type="submit" value="buy" [disabled]="p.quantity==0" (click)="decreaseQantity(k)" >
+</div>
+
+
