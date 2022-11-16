@@ -1,0 +1,6 @@
+ng-pristine ng-invalid ng-touched{
+    border:solid red 2px
+}
+.ng-valid .ng-touched{
+    border:solid green 2px
+}

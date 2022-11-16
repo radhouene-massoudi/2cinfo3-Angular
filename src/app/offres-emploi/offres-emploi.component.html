@@ -1,0 +1,15 @@
+<p>offres-emploi works!</p>
+<div *ngFor="let offre of offres">
+    <div *ngIf="offre.company==search ||search==''">
+{{offre.reference}}
+{{offre.title}}
+{{offre.company}}
+{{offre.etat}}
+
+<input type="submit" value="postuler" [disabled]="!offre.etat">
+</div>
+</div>
+<input type="submit" value="bilan" (click)="bilan()" [disabled]="etatbutton">
+{{c}}
+<input type="text" [(ngModel)]="search">
+length of table equal to {{lengthoftable}}

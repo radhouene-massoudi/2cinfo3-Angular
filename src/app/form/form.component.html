@@ -1,0 +1,29 @@
+
+<form #f="ngForm">
+<label>id</label>
+<input type="number" name="id"  ngModel required min="2" #idtest="ngModel">
+<div *ngIf="idtest.invalid && idtest.touched">
+<div *ngIf="idtest.errors?.['required']">
+required
+</div>
+<div *ngIf="idtest.errors?.['min']">
+   min
+    </div>
+</div>
+<label>title</label>
+<input type="text" name="title" ngModel >
+<label>Quantity</label>
+<input type="number" name="Quantity" ngModel>
+<label>price</label>
+<input type="number" name="price" ngModel>
+<input type="submit" value="save product" (click)="showData(idtest)">
+</form>
+-------------------------
+<div *ngFor="let p of product">
+{{p.id}}
+{{p.title}}
+{{p.price}}
+</div>
+----------------------------
+<input type="text" #g>
+<input type="submit"(click)="showData(g)">
