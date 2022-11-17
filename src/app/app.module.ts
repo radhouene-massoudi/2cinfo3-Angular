@@ -14,7 +14,9 @@ import { FormComponent } from './form/form.component';
 import { Service1Component } from './service1/service1.component';
 import { Service2Component } from './service2/service2.component';
 import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
-
+import { ListproductComponent } from './crudProduct/listproduct/listproduct.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetailproductComponent } from './crudProduct/detailproduct/detailproduct.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,11 +30,14 @@ import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
     Service1Component,
     Service2Component,
     OffresEmploiComponent,
+    ListproductComponent,
+    DetailproductComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+   HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
