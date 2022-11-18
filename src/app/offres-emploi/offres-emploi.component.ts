@@ -14,6 +14,7 @@ export class OffresEmploiComponent implements OnInit {
      ]
   
      c=0; 
+     nb=0;
      etatbutton=false;
      search="";
      lengthoftable=this.offres.length;

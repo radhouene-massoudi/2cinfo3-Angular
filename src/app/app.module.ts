@@ -17,6 +17,8 @@ import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
 import { ListproductComponent } from './crudProduct/listproduct/listproduct.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetailproductComponent } from './crudProduct/detailproduct/detailproduct.component';
+import { AddproductComponent } from './crudProduct/addproduct/addproduct.component';
+import { UpdateproductComponent } from './crudProduct/updateproduct/updateproduct.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +34,8 @@ import { DetailproductComponent } from './crudProduct/detailproduct/detailproduc
     OffresEmploiComponent,
     ListproductComponent,
     DetailproductComponent,
+    AddproductComponent,
+    UpdateproductComponent,
   ],
   imports: [
     BrowserModule,

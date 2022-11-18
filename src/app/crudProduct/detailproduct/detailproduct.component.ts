@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ProductserviceService } from '../productservice.service';
 
 @Component({
@@ -7,13 +8,16 @@ import { ProductserviceService } from '../productservice.service';
   styleUrls: ['./detailproduct.component.css']
 })
 export class DetailproductComponent implements OnInit {
-
-  constructor(private s:ProductserviceService) { }
+product:any;
+idf:any;
+  constructor(private s:ProductserviceService,private acr:ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.s.getProductById(2).subscribe(
+this.idf=this.acr.snapshot.params['id'];
+    this.s.getProductById(this.idf).subscribe(
       (d)=>{
-        console.log(d);
+        //console.log(d);
+        this.product=d;
       }
     )
   }

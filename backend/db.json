@@ -1,20 +1,25 @@
 {
   "product": [
     {
-      "id": 1,
-      "title": "json-server",
-      "price": 100,
-      "quantity":500,
-      "like":0
-      
+      "title": "adelsdjfbsdkjfsdfkjss",
+      "price": 500,
+      "quantity": 981,
+      "like": 17,
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "json-server",
-      "price": 100,
-      "quantity":500,
-      "like":0
-      
+      "title": "Mollit sed odit non ",
+      "price": 938,
+      "quantity": 673,
+      "like": 46,
+      "id": 2
+    },
+    {
+      "title": "Repellendus Sint la",
+      "price": 754,
+      "quantity": 535,
+      "like": 84,
+      "id": 3
     }
   ]
 }
