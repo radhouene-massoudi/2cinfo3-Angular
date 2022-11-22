@@ -1,25 +1,3 @@
 {
-  "product": [
-    {
-      "title": "adelsdjfbsdkjfsdfkjss",
-      "price": 500,
-      "quantity": 981,
-      "like": 17,
-      "id": 1
-    },
-    {
-      "title": "Mollit sed odit non ",
-      "price": 938,
-      "quantity": 673,
-      "like": 46,
-      "id": 2
-    },
-    {
-      "title": "Repellendus Sint la",
-      "price": 754,
-      "quantity": 535,
-      "like": 84,
-      "id": 3
-    }
-  ]
+  "product": []
 }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { C1Component } from './c1/c1.component';
 import { AddproductComponent } from './crudProduct/addproduct/addproduct.component';
+import { DeleteproductComponent } from './crudProduct/deleteproduct/deleteproduct.component';
 import { DetailproductComponent } from './crudProduct/detailproduct/detailproduct.component';
 import { ListproductComponent } from './crudProduct/listproduct/listproduct.component';
 import { UpdateproductComponent } from './crudProduct/updateproduct/updateproduct.component';
@@ -13,6 +14,7 @@ import { TestComponent } from './test/test.component';
 const routes: Routes = [
   {path:'',redirectTo:'addProduct',pathMatch:'full'},
   {path:'updateProduct/:idt',component:UpdateproductComponent},
+  {path:'remove/:id',component:DeleteproductComponent},
   {path:'addProduct',component:AddproductComponent},
   {path:'detail/:id',component:DetailproductComponent},
   {path:'showproduct',component:ListproductComponent},

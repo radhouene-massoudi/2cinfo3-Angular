@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DetailproductComponent } from './crudProduct/detailproduct/detailproduct.component';
 import { AddproductComponent } from './crudProduct/addproduct/addproduct.component';
 import { UpdateproductComponent } from './crudProduct/updateproduct/updateproduct.component';
+import { DeleteproductComponent } from './crudProduct/deleteproduct/deleteproduct.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { UpdateproductComponent } from './crudProduct/updateproduct/updateproduc
     DetailproductComponent,
     AddproductComponent,
     UpdateproductComponent,
+    DeleteproductComponent,
   ],
   imports: [
     BrowserModule,

@@ -20,4 +20,7 @@ return this.http.post('http://localhost:3000/product/',data)
   updateProduct(data:any,id:any){
     return this.http.put('http://localhost:3000/product/'+id,data)
       }
+      removeProduct(id:any){
+return this.http.delete('http://localhost:3000/product/'+id)
+      }
 }
